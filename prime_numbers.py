@@ -1,4 +1,5 @@
 def prime_no (n):
+<<<<<<< HEAD
 	a = list()
 	
 	if type(n) is not int or n == '':
@@ -18,5 +19,15 @@ def prime_no (n):
 			else:#place the prime numbers in a list
 				a.append(i)
 	return a
+=======
+	if n>0: # Need to catch exception for negative numbers
+		for i in range(1,n+1):
+			for t in range(2,i): 
+				if i%t==0:
+					break
+			else:
+				print(i) # Need to create an empty list to append this numbers that happen to be primes
+	#Use a return to return valie of the list of prime numbers detected
+>>>>>>> d06d25a281011ffd6555f134c9cf5a0a4573e4e3
 
 print (prime_no(9))
