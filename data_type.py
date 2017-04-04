@@ -1,6 +1,9 @@
 def data_type(x=""):
-	if x == '':
+	if x == None :
 		return "no value"
+
+	elif x == '':
+		return "empty string"
 
 	elif type(x) == str:
 		length = len(x)
@@ -19,4 +22,13 @@ def data_type(x=""):
 		elif x==100:
 			return "equal to 100"
 
-print(data_type(196))
+	elif type(x) == list:
+		if len(x) >= 3:
+			return x[2]
+
+		else:
+			return None
+	else :
+		return "invalid type"
+
+print(data_type())
