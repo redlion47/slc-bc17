@@ -9,7 +9,7 @@ class LoanCalculator(unittest.TestCase):
 	def test_working(self):
 		self.assertEqual(prime_no(9), [2, 3, 5, 7] , "Code Error")
 	def test_output_type(self):
-		self.assertEqual(type(prime_no(9))=='list', "type Error")
+		self.assertEqual(type(prime_no(9))==list, "type Error")
 	def test_input_type(self):
 		self.assertEqual(prime_no(20.6), "invalid input type")
 		
