@@ -1,18 +1,29 @@
 def find_max_min(T):
 	maxi = 0
-	#mini = 0
-	if type(T) == list:
-		for i in T:
+	b = list()
+	if type(T) == list:#ensures the data type we get is a list
+
+		for i in T:#loops around to find the largest number in our list
 			if maxi < i:
 				maxi = i
+
 		mini = maxi
-		for i in T:
+
+		for i in T:#checks the smallest number in a list
 			if i< mini:
 				mini = i
-		print(maxi, mini)
+
+		if maxi == mini:#checks if the list has the same number
+			b.append(len(T))
+
+		else:# place the maximum and minimum in a list
+			b.append(mini)
+			b.append(maxi)
+
+		return(b)
 	else:
 		return "error"
 
 
 
-print(find_max_min([5,6,5,8,8]))
+print(find_max_min([4,4]))

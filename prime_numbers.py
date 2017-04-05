@@ -5,10 +5,10 @@ def prime_no (n):
 	if type(n) is not int or n == '':#checks the type of the value received
 		return "invalid entry"
 
-	if n<0:
+	if n<0:#ensure we get a value greater than 0
 		return "invalid input"
 
-	if n==0 or n==1:
+	if n==0 or n==1:#elliminate 1 and 0 from the list of prime numbers
 		return n," is not a prime number"
 
 	if n>1:#ensure the number is not a negative and it is greater than zero
