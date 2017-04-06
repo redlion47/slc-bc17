@@ -2,36 +2,42 @@
 <html>
 
 	<head>
+	<style>
+		a:link {text-decoration: none;}
+		
+		a:hover {text-decoration: underline;}
+		
+	</style>
 	</head>
 	
 	<body >
 	<div><!--the section making up the web page-->
 		
-		<div align="right"><!--the top section of the google page -->
+		<div align="right" style="padding-top:5px;"><!--the top section of the google page -->
 			
 			<div style= "display:inline;">
 			
-				<div style= "display:inline;"><!--the gmail link-->
+				<div style= "display:inline; padding:5px 5px 5px 5px;"><!--the gmail link-->
 					<a href = "https://mail.google.com/mail/?tab=wm">Gmail</a>
 				</div>
 				
-				<div style= "display:inline;"><!--the images link-->
-					<a href = "https://www.google.co.ke/imghp?hl=en&tab=wi&ei=nxTmWNe7G4LSU5fxkbgI&ved=0EKouCBUoAQ">Images</a>
+				<div style= "display:inline; padding:5px 5px 5px 5px;"><!--the images link-->
+					<a href = "https://www.google.co.ke/imghp?hl=en&tab=wi&ei=nxTmWNe7G4LSU5fxkbgI&ved=0EKouCBUoAQ" >Images</a>
 				</div>
 				
 			</div>
 			
-			<div style= "display:inline;">
+			<div style= "display:inline; height:45px; width:45px">
 			
-				<div style= "display:inline;"><!--the more application link-->
+				<div style= "display:inline; padding:5px 5px 5px 5px;"><!--the more application link-->
 					<a href = "https://www.google.co.ke/intl/en/about/products/">
-						<button name="products"></button>
+						<button name="products" style="height:25px; width:25px; padding-top:10px; border-style:none;"></button>
 					</a>
 				</div>
 				
-				<div style= "display:inline;"><!--the signin link-->
+				<div style= "display:inline; padding:5px 5px 5px 5px;"><!--the signin link-->
 					<a href = "https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.co.ke/">
-				    	<button name="signin">Sign in</button>
+				    	<button name="signin" style=" border-style:none; height:40px; width:80px; background-color:rgb(57, 116, 222);"><b style = "color:white;">Sign in</b></button>
 				    </a>
 				</div>
 				
@@ -39,7 +45,7 @@
 			
 		</div>
 		
-		<center>
+		<center style="padding-top:5%; padding-bottom:16%; padding-right:90px;">
 			<div ><!--the main section of the google page -->
 				
 				<div align="centre"><!--the google logo section -->
@@ -48,15 +54,15 @@
 				
 				<div><!--the google search form-->
 					
-					<form>
+					<form action="https://google.co.ke" >
 						<div><!--textarea for input of text to be googled-->
-							<input type="text" name="search"/>
+							<input type="text" name="search" style="height:36px; width:598px; margin:0; outline:grey;"/>
 						</div>
 						
-						<div><!--google search and i am feeling lucky buttons-->
-							<input type="submit" name="Google Search" value="Google Search"></input>
+						<div style="padding-top:10px;"><!--google search and i am feeling lucky buttons-->
+							<input type="submit" name="Google Search" value="Google Search" style="padding:5px 15px 5px 15px; border-style:hidden; background-color:rgb(220,220,220);color:dark-grey;"></input>
 							<a href = "https://www.google.com/doodles/finder/">
-								<button> i am feeling lucky </button>
+								<button style="padding:5px 5px 5px 5px;color:rgb(245,242,252);border-style:hidden;"> <b style="color:grey;">i am feeling lucky</b> </button>
 							</a>
 						</div>
 						
@@ -68,25 +74,25 @@
 				
 			</div>
 		</center>
-		
-		<div style="position:obsolute; bottom:0px;"><!--footer section of the web page-->
-			<div>
-				<span><!--the left footer contents-->
-					<a href = "https://www.google.co.ke/intl/en/ads/?fg=1">Advertising</a>
-					<a href = "https://www.google.co.ke/services/?fg=1">Business</a>
-					<a href = "https://www.google.co.ke/intl/en/about.html?fg=1">About</a>
-				</span>
+		<footer style="">
+			<div style="padding-bottom:5px; height:45px; width:100%;background-color:rgb(230,230,230); border-style:none;"><!--footer section of the web page-->
+				<div style= "display:inline;padding-right:40%;">
+					<span><!--the left footer contents-->
+						<a href = "https://www.google.co.ke/intl/en/ads/?fg=1" style="color:grey;">Advertising</a>
+						<a href = "https://www.google.co.ke/services/?fg=1" style="color:grey;">Business</a>
+						<a href = "https://www.google.co.ke/intl/en/about.html?fg=1" style="color:grey;">About</a>
+					</span>
+				</div>
+				<div style= "display:inline; padding-left:35%;">
+					<span ><!--the right footer contents-->
+					
+						<a href = "https://www.google.co.ke/intl/en/policies/privacy/?fg=1" style="color:grey;">Privacy</a>
+						<a href = "https://www.google.co.ke/intl/en/policies/terms/?fg=1" style="color:grey;">Terms</a>
+						<a href = "https://www.google.co.ke/preferences?hl=en" style="color:grey;">Settings</a>
+					</span>
+				</div>
 			</div>
-			<div align="right">
-				<span ><!--the right footer contents-->
-				
-					<a href = "https://www.google.co.ke/intl/en/policies/privacy/?fg=1">Privacy</a>
-					<a href = "https://www.google.co.ke/intl/en/policies/terms/?fg=1">Terms</a>
-					<a href = "https://www.google.co.ke/preferences?hl=en">Settings</a>
-				</span>
-			</div>
-		</div>
-		
+		<footer>
 	</div>
 	</body>
 </html>
