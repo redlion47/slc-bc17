@@ -45,6 +45,9 @@ class BinarySearch(list):
 			"""if x>(self.start * self.end) or x % self.start != 0:
 				return dict(index = -1, count = count)
 			el"""
+			"""if x not in range(self.start,(self.start*self.end)+1):
+				return dict(index = -1, count = count)"""
+
 			if self[cntre] == x:#is the centre element the target element
 				#print(count)
 				return dict(index = cntre, count = count)#returns the index of the target and the number of times it took to find it
